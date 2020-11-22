@@ -19,7 +19,7 @@ module.exports = {
 
 function getAll(client, message) {
     const embed = new MessageEmbed()
-        .setTitle(`Lista de comandos \nPrefix \`!afrt\`\nEj: \`!afrt servers\``)
+        .setTitle(`Lista de comandos \nPrefijo \`!afrt\`\nEj: \`!afrt servers\``)
         .setColor("RANDOM")
         .setDescription(`Escriba el comando !afrt + <command> ex: \`!afrt ping\` para ver las funciones`)
         .setThumbnail('https://i.imgur.com/mnSJzVk.jpg');
@@ -50,12 +50,12 @@ function getCMD(client, message, input) {
         return message.channel.send(embed.setColor("RED").setDescription(info));
     }
 
-    if (cmd.name) info = `**Command Name**: ${cmd.name}`;
+    if (cmd.name) info = `**Nombre del comando**: ${cmd.name}`;
     if (cmd.aliases) info += `\n**Alias**: ${cmd.aliases.map(a => `\`${a}\``).join(", ")}`;
-    if (cmd.description) info += `\n**Description**: ${cmd.description}`;
+    if (cmd.description) info += `\n**Descripcion**: ${cmd.description}`;
     if (cmd.usage) {
-        info += `\n**How to use**: ${cmd.usage}`;
-        embed.setFooter(`Syntax: <-> = required, [] = optional`);
+        info += `\n**Como usar**: ${cmd.usage}`;
+        embed.setFooter(`Syntax: <-> = requerido, [] = opcional`);
     }
 
     return message.channel.send(embed.setColor("GREEN").setDescription(info));
