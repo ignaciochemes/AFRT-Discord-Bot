@@ -3,7 +3,7 @@ TITLE Servidor ACC - 1
 COLOR 0A
 :: Variables::
 ::Server_1.exe path
-set SERVER_ACC_1="C:\Users\Ignacio\Desktop\pepe\1-Server-Tu-Hermana"
+set SERVER_ACC_1="C:\Users\Ignacio\Desktop\pepe\1-Server-Brands-Hatch-Mixto"
 
 cls
 echo Levantando ACC SERVER 1

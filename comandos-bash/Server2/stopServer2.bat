@@ -1,18 +1,18 @@
 @echo off
-TITLE Servidor ACC - 1
+TITLE Servidor ACC - 2
 COLOR 0A
 :: Variables::
 ::Server_1.exe path
-set SERVER_ACC_1="C:\Users\Ignacio\Desktop\pepe\2-Server-Nurbur-Mixto"
+set SERVER_ACC_2="C:\Users\Ignacio\Desktop\pepe\2-Server-Hungaroring-Mixto"
 
 cls
 echo Apagando ACC SERVER 0
 FOR /L %%s IN (5,-1,0) DO (
 	cls
-	echo Apagando server, espere %%s segundos para terminar el proceso SERVER 0...
+	echo Apagando server, espere %%s segundos para terminar el proceso SERVER 2...
 	timeout 1 >nul
 )
 
 cd /d C:
-cd "%SERVER_ACC_1%"
+cd "%SERVER_ACC_2%"
 taskkill /f /im accServer2.exe

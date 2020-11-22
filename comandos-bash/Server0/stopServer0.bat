@@ -3,7 +3,7 @@ TITLE Servidor ACC - 1
 COLOR 0A
 :: Variables::
 ::Server_1.exe path
-set SERVER_ACC_1="C:\Users\Ignacio\Desktop\pepe\0-Server-Batu-Mixto"
+set SERVER_ACC_0="C:\Users\Ignacio\Desktop\pepe\0-Server-Barcelona-Mixto"
 
 cls
 echo Apagando ACC SERVER 0
@@ -14,5 +14,5 @@ FOR /L %%s IN (5,-1,0) DO (
 )
 
 cd /d C:
-cd "%SERVER_ACC_1%"
+cd "%SERVER_ACC_0%"
 taskkill /f /im accServer0.exe
